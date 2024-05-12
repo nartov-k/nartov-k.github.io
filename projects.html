@@ -4,27 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Professional Data Scientist Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a common CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your common CSS file -->
 </head>
 <body>
 
-<header>
-    <h1>Projects</h1>
-</header>
+<!--<header>
+    <h1>Saurabh Sawant</h1>
+    <p>Software Developer | Data Scientist</p>
+</header> -->
 
-<section class="container">
-    <div class="project">
-        <h3>Project 1: Predictive Analytics for Customer Churn</h3>
-        <p>Implemented machine learning models to predict customer churn for a telecom company, resulting in a 15% reduction in churn rate.</p>
-    </div>
-    <div class="project">
-        <h3>Project 2: Image Classification using Convolutional Neural Networks</h3>
-        <p>Developed a deep learning model to classify images in a medical imaging dataset, achieving an accuracy of 95%.</p>
-    </div>
-    <!-- Add more projects here -->
-</section>
 
-<a href="index.html">Back to Home</a>
+<div class="page-container">
+
+    <div id="particles-js">
+    </div>
+
+    <div class="sidebar">
+        <img src="saurabh-sawant.jpg" alt="Saurabh Sawant" class="profile-photo">
+        <h1>Saurabh Sawant</h1>
+        <p class="role">Software Developer</p>
+        <p class="role">Data Scientist</p>
+        <div class="contact-info">
+            <p><img src="email-icon.png" alt="Email"> nartovk@umich.edu</p>
+            <p><img src="phone-icon.png" alt="Phone"> +1 (812) 262-1210</p>
+            <p><img src="location-icon.png" alt="Location"> Ann Arbor, MI, USA</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kirill-nartov/"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/nartov-k/projects"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="about-me" class="container">
+            <nav class="top-nav">
+                <a href="index.html">About</a>
+                <a href="resume.html">Resume</a>
+                <!-- <a href="skills.html">Skills</a> -->
+                <a href="projects.html">Projects</a>
+            </nav>
+            <h2>Projects</h2>
+        </section>
+        
+        <main class="container">
+            
+            <!-- Project 1 -->
+            <a href="https://github.com/nartov-k/projects/tree/main/BI_Analysis_Coffee_Shop" class="project-link">
+                <div class="project">
+                    <img src="image1.png" alt="Autonomous Driving System">
+                    <div class="project-info">
+                        <p class="tech-stack">Python | OpenCV | TensorFlow | Numpy</p>
+                        <h3>Autonomous Driving System</h3>
+                        <p>Generated dataset with key bindings and processed images using OpenCV to control a vehicle in a simulator, prioritizing safety.</p>
+                    </div>
+                </div>
+            </a>
+        
+            <!-- Project 2 -->
+            <a href="https://github.com/nartov-k/projects/tree/main/Cross-Market_Pred" class="project-link">
+                <div class="project">
+                    <img src="image2.png" alt="Document Clustering Summarization Visualization">
+                    <div class="project-info">
+                        <p class="tech-stack">Python | BERTopic | Huggingface | Matplotlib</p>
+                        <h3>Document Clustering Summarization Visualization</h3>
+                        <p>Utilizing advanced methods (LDA, TF-IDF, TextRank, PEGASUS, BERT) on 20NewsGroups dataset. Offers insights with visual aids like word clouds and treemap charts.</p>
+                    </div>
+                </div>
+            </a>
+            <!-- Add more projects here -->
+        
+             <!-- Project 3 -->
+             <a href="https://github.com/nartov-k/projects/tree/main/Cross-Market_Pred" class="project-link">
+                <div class="project">
+                    <img src="image2.png" alt="Document Clustering Summarization Visualization">
+                    <div class="project-info">
+                        <p class="tech-stack">Python | BERTopic | Huggingface | Matplotlib</p>
+                        <h3>Document Clustering Summarization Visualization</h3>
+                        <p>Utilizing advanced methods (LDA, TF-IDF, TextRank, PEGASUS, BERT) on 20NewsGroups dataset. Offers insights with visual aids like word clouds and treemap charts.</p>
+                    </div>
+                </div>
+            </a>
+        
+             <!-- Project 4 -->
+             <a href="https://github.com/nartov-k/projects/tree/main/Cross-Market_Pred" class="project-link">
+                <div class="project">
+                    <img src="image2.png" alt="Document Clustering Summarization Visualization">
+                    <div class="project-info">
+                        <p class="tech-stack">Python | BERTopic | Huggingface | Matplotlib</p>
+                        <h3>Document Clustering Summarization Visualization</h3>
+                        <p>Utilizing advanced methods (LDA, TF-IDF, TextRank, PEGASUS, BERT) on 20NewsGroups dataset. Offers insights with visual aids like word clouds and treemap charts.</p>
+                    </div>
+                </div>
+            </a>
+        
+        </main>
+    </div>
+
+</div>
+
+<!-- <footer>
+    <p>Contact me at <a href="mailto:nartovk@umich.edu">nartovk@umich.edu</a> or <a href="https://www.linkedin.com/in/kirill-nartov/">my LinkedIn</a></p>
+</footer> -->
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS('particles-js',
+      {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      }
+    );
+</script>
 
 </body>
 </html>
