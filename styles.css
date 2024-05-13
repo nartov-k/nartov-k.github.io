@@ -5,14 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Body and Font Styles */
-/*body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    line-height: 1.6;
-}*/
-
 body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
@@ -20,14 +12,6 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
-/* Header Styles */
-/*header {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 40px 0;
-}*/
 
 header {
     background-color: #000;
@@ -216,18 +200,6 @@ ul, li {
 
 
 
-
-
-.sidebar {
-    width: 300px; /* Adjust width as needed */
-    background-color: #177;
-    /*background-color: #ccccccb3;*/
-    /*background-color: #68686880;  /* Also represents white with 50% opacity */
-    color: #fff;
-    padding: 20px;
-    box-shadow: 5px 0 10px rgba(0,0,0,0.5);
-}
-
 .main-content {
     margin-left: 300px; /* Offset the main content to the right of the sidebar */
     overflow: auto;
@@ -352,7 +324,7 @@ header, footer {
         flex-direction: column;
         padding: 10px;
         margin: 10px;
-        border-left: none;
+        /*border-left: none;*/
     }
     .project {
         width: 100%;
@@ -388,25 +360,181 @@ header, footer {
 
 
 
-/* animated background
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
+
+
+/*#particles-js {
+    display: none; /* Optionally hide particles on small devices for performance */
+/*}*/
+
+
+
+
+
+
+
+
+/*below are attempts to adapt the page to phones*/
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    .sidebar {
+        position: relative; /* Change from absolute to relative for mobile */
+        width: 100%; /* Full width */
+        height: auto; /* Auto height based on content */
+        padding: 10px; /* Adjust padding */
+        margin: 0 auto; /* Center it horizontally */
+        top: 0; /* Reset top position */
+        bottom: auto; /* Reset bottom position */
+        border-radius: 0; /* Remove border radius */
+        background-color: #333; /* Solid color for visibility */
+        box-shadow: none; /* Remove box shadow */
+        flex-direction: row; /* Align items in a row instead of column */
+        justify-content: space-around; /* Distribute space evenly */
+        display: flex; /* Enable flexbox */
+        align-items: center; /* Center items vertically */
     }
-    50% {
-        background-position: 100% 50%;
+
+    .main-content {
+        margin-left: 0; /* Remove the left margin to use full width */
+        margin-top: 60px; /* Add top margin to avoid overlap with the sidebar */
     }
-    100% {
-        background-position: 0% 50%;
+
+    .profile-photo {
+        width: 40px; /* Smaller profile photo */
+        height: 40px; /* Keep it circular */
+        margin-right: 10px; /* Space between photo and text */
+    }
+
+    .role, .contact-info, .social-links {
+        display: none; /* Hide these elements on small screens */
+    }
+
+    /*header, .top-nav, .activity-grid, .project, .project-info, .tech-stack {
+        /* Reset or adjust styles as needed */
+    /*}*/
+
+    header h1, .sidebar h1 {
+        font-size: 18px; /* Smaller font size for the header */
     }
 }
 
-body {
-    animation: gradientBG 15s ease infinite;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+/* Existing styles and further adjustments as needed */
+
+
+
+
+/* General styles remain unchanged */
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;  /* Stack sidebar and content vertically on small screens */
+        padding-right: 10px; /* Eliminate any right padding that might be pushing content left */
+    }
+
+    .sidebar {
+        width: 100%;  /* Full width for the sidebar on smaller screens */
+        position: relative;  /* Switching from absolute to normal flow */
+        margin: 0 auto;  /* Centering the sidebar */
+        padding: 10px;  /* Adjust padding to fit smaller screens */
+        box-shadow: none;  /* Optional: Remove shadow to clean up appearance */
+        top: auto;  /* Remove top positioning */
+        bottom: auto;  /* Remove bottom positioning */
+    }
+
+    .main-content {
+        margin-left: 0;  /* Remove left margin */
+        margin-top: 20px;  /* Add space between the sidebar and content */
+    }
+
+    header, .container, .project, .activity-grid {
+        padding: 10px;  /* Reduce padding */
+        max-width: none;  /* Allow full width usage */
+    }
+
+    .profile-photo {
+        width: 30%;  /* Adjust profile photo size */
+        margin: 10px auto;  /* Centering the profile photo */
+    }
+
+    .top-nav {
+        flex-direction: row;  /* Ensure nav items are inline */
+        justify-content: center;  /* Center navigation links */
+    }
+
+    .top-nav a {
+        padding: 8px;  /* Easier to tap on mobile */
+        font-size: 0.9em;  /* Adjust font size for space */
+    }
 }
-*/
+
+/* Consider hiding less critical sidebar information on smaller screens to prevent clutter */
+
+
+
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .sidebar {
+        position: fixed; /* Keep the sidebar at the top */
+        width: 380px; /* Full width */
+        height: 60px; /* Limit the height to keep it compact */
+        padding: 5px 10px;/*10px 5px; /* Reduced padding */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: row; /* Arrange items in a row */
+        justify-content: space-around; /* Evenly space the content */
+        align-items: center; /* Center-align items vertically */
+        background-color: #333; /* Ensure the background is dark for readability */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Soft shadow for depth */
+        z-index: 1000; /* Make sure it's above other content */
+        /*background-color: #68686898;*/
+        border-radius: 15px; /* Rounded corners with a radius of 15px */
+        /*padding-left: 60px; /* Padding from the left edge of the page */
+        /*padding-right: 10px;*/
+        right: 20px;  /* Align sidebar to the right edge */
+        left: auto; /* Remove left alignment if previously set */
+        top: 30px;
+    }
+
+    .profile-photo {
+        width: 40px; /* Smaller profile photo */
+        height: 40px; /* Maintain aspect ratio */
+        border-radius: 50%; /* Circular photo */
+        margin-right: 5px; /* Space next to the photo */
+    }
+
+    .sidebar h1, .role {
+        display: none; /* Hide larger text elements  and roles*/
+    }
+
+    .contact-info, .social-links {
+        display: flex;
+        flex-direction: row; /* Arrange icons in a row */
+        align-items: center;
+        justify-content: center;
+        font-size: 10px; /* Smaller font size for details */
+    }
+
+    .contact-info p, .social-links a {
+        margin: 0 4px; /* Tighter spacing */
+    }
+
+    .social-links img, .contact-info img {
+        width: 20px; /* Smaller icons */
+        height: 20px; /* Maintain aspect ratio */
+    }
+
+    .main-content {
+        padding-top: 130px; /* Space for the fixed sidebar on top */
+    }
+
+}
+
+
+
+
+
