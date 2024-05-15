@@ -187,7 +187,8 @@ ul, li {
 }
 
 .top-nav a {
-    color: #ffffff; /* Ensures text is white */
+    /*color: #ffffff; /* Ensures text is white */
+    color: #007bff;
     text-decoration: none; /* Removes underline from links */
     margin-left: 20px; /* Adds space between links */
     font-weight: bold; /* Makes text bold */
@@ -509,6 +510,7 @@ header, footer {
         height: 40px; /* Maintain aspect ratio */
         border-radius: 50%; /* Circular photo */
         margin-right: 2px; /* Space next to the photo */
+        margin-left: 4px;
     }
 
     .sidebar h1, .role {
@@ -532,10 +534,6 @@ header, footer {
         width: 15px; /* Smaller icons */
         height: 15px; /* Maintain aspect ratio */
         margin-right: 2px;
-        margin-left: 2px;
-    }
-
-    .social-links img {
         margin-left: 4px;
     }
 
