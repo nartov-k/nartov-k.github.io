@@ -546,9 +546,8 @@ header, footer {
 
 
 @media (max-width: 768px) {
-
-    .profile-photo {
-        margin-left: 3px; /* Adjust this value as needed */
+    .sidebar .profile-photo {
+        margin-left: 5px; /* Adjust this value as needed */
     }
 }
 
