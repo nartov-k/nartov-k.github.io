@@ -541,7 +541,17 @@ header, footer {
         padding-top: 130px; /* Space for the fixed sidebar on top */
     }
 
+
 }
+
+
+@media (max-width: 768px) {
+
+    .profile-photo {
+        margin-left: 3px; /* Adjust this value as needed */
+    }
+}
+
 
 
 
