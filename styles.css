@@ -103,6 +103,7 @@ ul, li {
     /*background-color: rgba(255, 255, 255, 0.5); /* semi-transparent white */
     background-color: #68686890;  /* Also represents white with 50% opacity */
     backdrop-filter: blur(5px); /* blurring the background */
+    -webkit-backdrop-filter: blur(5px); /* For Safari and older browsers */
     /*position: relative;
     overflow: hidden;*/
     /*filter: blur(5px);  /* Applies a Gaussian blur effect */
@@ -282,6 +283,7 @@ ul, li {
     margin-left: 80px; /* Adds margin to the left of the sidebar */
     background-color: #68686890;  /* Also represents white with 50% opacity */
     backdrop-filter: blur(5px); /* blurring the background */
+    -webkit-backdrop-filter: blur(5px); /* For Safari and older browsers */
 }
 
 /* Styling for the main content */
@@ -333,6 +335,9 @@ header, footer {
         padding: 10px;
         margin: 10px;
         /*border-left: none;*/
+        background-color: #68686890;  /* Also represents white with 50% opacity */
+        backdrop-filter: blur(5px); /* blurring the background */
+        -webkit-backdrop-filter: blur(5px); /* For Safari and older browsers */
     }
     .project {
         width: 100%;
@@ -507,8 +512,9 @@ header, footer {
         right: 20px; /* Right margin fixed 
         /*left: 20px; /* Left margin fixed, replaces the need for calc() to center */
         top: 30px;
-        background-color: #68686890;  /* Also represents white with 90% opacity */
+        background-color: #68686890;  /* Also represents white with 50% opacity */
         backdrop-filter: blur(5px); /* blurring the background */
+        -webkit-backdrop-filter: blur(5px); /* For Safari and older browsers */
     }
 
     .profile-photo {
